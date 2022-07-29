@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mobile_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/addedProductsCartItem">
+
+    <fragment
+        android:id="@+id/browseProductsItem"
+        android:name="com.products.cart.ui.main.browse_product.BrowseProductsFragment"
+        android:label="Browse products to add"
+        tools:layout="@layout/fragment_browse_movies">
+        <argument
+            android:name="categoryType"
+            app:argType="string"
+            android:defaultValue="now_playing" />
+    </fragment>
+    <fragment
+        android:id="@+id/addedProductsCartItem"
+        android:name="com.products.cart.ui.main.cart.ShoppingCartFragment"
+        android:label="Added products cart"
+        tools:layout="@layout/fragment_shopping_cart">
+        <argument
+            android:name="categoryType"
+            app:argType="string"
+            android:defaultValue="favorite" />
+        <action
+            android:id="@+id/action_addedProductsCarItem_to_browseProductsItem"
+            app:destination="@id/browseProductsItem" />
+    </fragment>
+</navigation>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Products cart app</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="set_theme">Set Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+</resources>
